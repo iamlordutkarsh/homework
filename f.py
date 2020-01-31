@@ -1,12 +1,12 @@
-n=str(input("enter name of emplyee  "))
-p=input("enter pan number ")
+n=raw_input("enter name of emplyee  ")
+p=raw_input("enter pan number ")
 s=int(input("enter salary "))
-while s>250000:
+if s>250000:
     if s<500000:
-        k=s*5/100
+        k=s-s*5/100
         print("TEST",k)
-    else :
-    print(s)
+else :
+     print(s)
 #n2=input("enter name of emplyee")
 #p2=input("enter pan number")
 #s2=int(input("enter salary"))
