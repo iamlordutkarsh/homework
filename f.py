@@ -31,9 +31,9 @@ else:
     k2=s2
 
 #3rd Person Info
-n2=raw_input("enter name of emplyee  ")
-p2=raw_input("enter pan number ")
-s2=int(input("enter salary "))
+n3=raw_input("enter name of emplyee  ")
+p3=raw_input("enter pan number ")
+s3=int(input("enter salary "))
 if s3>250000:
     if s3<500000:
         k3=s3-s3*5/100
@@ -61,9 +61,9 @@ else:
     k4=s4
 
 #5th Person Info
-n4=raw_input("enter name of emplyee")
-p4=raw_input("enter pan number")
-s4=int(input("enter salary"))
+n5=raw_input("enter name of emplyee")
+p5=raw_input("enter pan number")
+s5=int(input("enter salary"))
 if s5>250000:
     if s5<500000:
         k5=s5-s5*5/100
