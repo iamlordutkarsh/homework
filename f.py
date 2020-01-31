@@ -7,9 +7,9 @@ while s>250000:
         print("Salary After 5% Tax",k)
 while s>500000:
     while s<1000000:
-         k=s-s*20/100
+        k=s-s*20/100
         print("Salary After 20% Tax",k)
-
+print()
 print(s)
 #n2=input("enter name of emplyee")
 #p2=input("enter pan number")
