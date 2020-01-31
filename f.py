@@ -1,24 +1,21 @@
 #Using "raw_input" instead of "str" due to pyhton 2.x
 
+# n= Name , p= Pan , s=Salary , k=Tax , sur=Sur Charge , ce=cess Charge !
+
 #1st Person Info
 n1=raw_input("enter name of emplyee:= ")
 p1=raw_input("enter pan number:= ")
 s1=int(input("enter salary:= "))
+if s1<250000
+    k2=0
 if s1>250000:
     if s1<500000:
-        k1=s1+s1*5/100
+        k2=s1*5/100
 if s1>500000:
     if s1<1000000:
-        k1=s1+s1*20/100
+        k2=s1*20/100
 if s1>1000000:
-    k1=s1+s1*30/100
-if k1>5000000:
-    if k1<10000000:
-        k1=k1+k1*10/100
-    if k1>10000000:
-        k1=k1+k1*15/100
-else:
-    k1=s1
+    k2=s1*30/100
 
 #2nd Person Info
 n2=raw_input("enter name of emplyee")
@@ -26,14 +23,19 @@ p2=raw_input("enter pan number")
 s2=int(input("enter salary"))
 if s2>250000:
     if s2<500000:
-        k2=s2-s2*5/100
+        k2=s2+s2*5/100
 if s2>500000:
     if s2<1000000:
-        k2=s2-s2*20/100
+        k2=s2+s2*20/100
 if s2>1000000:
-    k2=s2-s2*30/100
+    k2=s2+s2*30/100
+if k2>5000000:
+    if k2<10000000:
+        sur2=k2+tax*10/100
+    if k2>10000000:
+        sur2=k2+tax*15/100
 else:
-    k2=s2
+    k2=s1
 
 #3rd Person Info
 n3=raw_input("enter name of emplyee  ")
