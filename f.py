@@ -6,12 +6,17 @@ p1=raw_input("enter pan number:= ")
 s1=int(input("enter salary:= "))
 if s1>250000:
     if s1<500000:
-        k1=s1-s1*5/100
+        k1=s1+s1*5/100
 if s1>500000:
     if s1<1000000:
-        k1=s1-s1*20/100
+        k1=s1+s1*20/100
 if s1>1000000:
-    k1=s1-s1*30/100
+    k1=s1+s1*30/100
+if k1>5000000:
+    if k1<10000000:
+        k1=k1+k1*10/100
+    if k1>10000000:
+        k1=k1+k1*15/100
 else:
     k1=s1
 
