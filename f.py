@@ -6,7 +6,7 @@ if s>250000:
         k=s-s*5/100
         print("Salary After 5% Tax",k)
 if s>500000:
-    if s<1000000
+    if s<1000000:
       k=s-s*20/100
         print("Salary After 20% Tax",k)
 else :
