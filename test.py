@@ -1,39 +1,39 @@
-n=str(input("Enter User Name :- "))
-p=input("Enter Pan Number")
-s=int(input("Enter Salary"))
-if s<250000:
-    tax=0
-    sur=0
-    cess=0
+n1=str(input("Enter User Name :- "))
+p1=input("Enter Pan Number")
+s1=int(input("Enter Salary"))
+if s1<250000:
+    tax1=0
+    sur1=0
+    cess1=0
 
-elif s>250000:
-    if s<500000:
-        tax=0.05*s
-        cess=0.04*tax
-        sur=0
+elif s1>250000:
+    if s1<500000:
+        tax1=0.05*s1
+        cess1=0.04*tax1
+        sur1=0
 
-elif (s>500000) or (s<1000000):
-     tax=20/100*s
-     cess=4/100*(tax)
-     sur=0
+elif (s1>500000) or (s1<1000000):
+     tax1=20/100*s1
+     cess1=4/100*(tax1)
+     sur1=0
 
-elif (s>1000000) or (s<5000000):
-     tax=30/100*s
-     cess=4/100*(tax)
-     sur=0
+elif (s1>1000000) or (s1<5000000):
+     tax1=30/100*s1
+     cess1=4/100*(tax1)
+     sur1=0
 
-elif (s>5000000) or (s<10000000):
-    tax=30/100*s
-    sur=10/100*tax
-    cess=4/100*(tax + sur)
+elif (s1>5000000) or (s1<10000000):
+    tax1=30/100*s1
+    sur1=10/100*tax1
+    cess1=4/100*(tax1 + sur1)
 
-elif (s>10000000):
-    tax=30/100*s
-    sur=15/100*tax
-    cess=4/100*(tax + sur)
+elif (s1>10000000):
+    tax1=30/100*s1
+    sur1=15/100*tax1
+    cess1=4/100*(tax1 + sur1)
 
-print("Tax :- ",tax)
+print(tax1)
 
-print("Sur",sur)
+print("Sur",sur1)
 
-print("cess",cess)
+print("cess",cess1)
