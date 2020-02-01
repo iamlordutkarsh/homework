@@ -6,28 +6,28 @@ if s<250000:
     sur=0
     cess=0
 
-if s>250000:
+elif s>250000:
     if s<500000:
         tax=0.05*s
         cess=0.04*tax
         sur=0
 
-if (s>500000) or (s<1000000):
+elif (s>500000) or (s<1000000):
      tax=20/100*s
      cess=4/100*(tax)
      sur=0
 
-if (s>1000000) or (s<5000000):
+elif (s>1000000) or (s<5000000):
      tax=30/100*s
      cess=4/100*(tax)
      sur=0
 
-if (s>5000000) or (s<10000000):
+elif (s>5000000) or (s<10000000):
     tax=30/100*s
     sur=10/100*tax
     cess=4/100*(tax + sur)
 
-if (s>10000000):
+elif (s>10000000):
     tax=30/100*s
     sur=15/100*tax
     cess=4/100*(tax + sur)
