@@ -7,15 +7,15 @@
 def pig_latin(text):
 	first_word = text[0]
 	if first_word in 'aeiou':
-		r = text+'ay'
+		result =  text+'ay'
 		
 	elif first_word in 'AEIOU':
-		r = text+'ay'
+		result = text+'ay'
 				
 	else:
-		r = text[1:]+first_word+'ay'
-
-        return r
+		result = text[1:]+first_word+'ay'
+		
+	return result
 				
 str = str(input("Enter A Word :- "))
 print(" ")
